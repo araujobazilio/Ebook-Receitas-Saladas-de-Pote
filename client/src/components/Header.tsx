@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Leaf } from "lucide-react";
+import { useFacebookPixel } from "@/hooks/useFacebookPixel";
 
 /**
  * Header Component
@@ -9,9 +10,15 @@ import { Leaf } from "lucide-react";
  * - CTA destacado em verde natural
  */
 export default function Header() {
+  const { trackCTAClick } = useFacebookPixel();
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleCTAClick = () => {
+    trackCTAClick('Header CTA - Quero as 50 Receitas');
   };
 
   return (
@@ -57,6 +64,7 @@ export default function Header() {
           href="https://pay.kiwify.com.br/sjOd6yS"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleCTAClick}
           className="inline-flex items-center justify-center gap-2 bg-[#2D5016] hover:bg-[#1B3A0B] text-white font-semibold px-4 py-2 rounded-md transition-all duration-300"
         >
           Quero as 50 Receitas

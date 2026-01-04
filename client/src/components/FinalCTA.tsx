@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Shield } from "lucide-react";
+import { useFacebookPixel } from "@/hooks/useFacebookPixel";
 
 /**
  * Final CTA Section
@@ -9,6 +10,12 @@ import { ArrowRight, CheckCircle2, Shield } from "lucide-react";
  * - Elementos de confiança e garantia
  */
 export default function FinalCTA() {
+  const { trackCTAClick } = useFacebookPixel();
+
+  const handleCTAClick = () => {
+    trackCTAClick('Final CTA - Quero as 50 Receitas Agora');
+  };
+
   return (
     <section id="cta" className="bg-[#2D5016] text-white py-20 md:py-32">
       <div className="container max-w-3xl">
@@ -61,6 +68,7 @@ export default function FinalCTA() {
             href="https://pay.kiwify.com.br/sjOd6yS"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleCTAClick}
             className="inline-flex items-center justify-center gap-2 bg-white text-[#2D5016] hover:bg-green-50 font-bold text-lg h-16 px-10 rounded-md transition-all duration-300 hover:shadow-xl"
           >
             Quero as 50 Receitas Agora

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useFacebookPixel } from "@/hooks/useFacebookPixel";
 
 /**
  * Hero Section
@@ -10,6 +11,12 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
  * - CTA primário destacado
  */
 export default function Hero() {
+  const { trackCTAClick } = useFacebookPixel();
+
+  const handleCTAClick = () => {
+    trackCTAClick('Hero CTA - Quero as 50 Receitas Agora');
+  };
+
   return (
     <section className="bg-white pt-12 pb-20 md:pt-20 md:pb-32">
       <div className="container">
@@ -68,6 +75,7 @@ export default function Hero() {
               href="https://pay.kiwify.com.br/sjOd6yS"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleCTAClick}
               className="inline-flex items-center justify-center gap-2 bg-[#2D5016] hover:bg-[#1B3A0B] text-white font-bold text-lg h-14 px-8 rounded-md transition-all duration-300 hover:shadow-lg"
             >
               Quero as 50 Receitas Agora
