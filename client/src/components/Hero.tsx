@@ -70,6 +70,17 @@ export default function Hero() {
               </div>
             </div>
 
+            {/* Preço Promocional */}
+            <div className="flex items-center gap-4">
+              <div className="flex items-baseline gap-2">
+                <span className="text-sm text-gray-500 line-through">R$ 97,90</span>
+                <span className="text-4xl font-bold text-[#2D5016]">R$ 29,90</span>
+              </div>
+              <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">
+                -69% OFF
+              </span>
+            </div>
+
             {/* CTA Primário */}
             <a
               href="https://pay.kiwify.com.br/sjOd6yS"

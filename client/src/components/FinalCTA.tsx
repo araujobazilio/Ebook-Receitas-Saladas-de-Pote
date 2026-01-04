@@ -63,6 +63,17 @@ export default function FinalCTA() {
             ))}
           </div>
 
+          {/* Preço Promocional */}
+          <div className="flex items-center justify-center gap-4 my-8">
+            <div className="flex items-baseline gap-2">
+              <span className="text-sm text-green-200 line-through">R$ 97,90</span>
+              <span className="text-5xl font-bold text-white">R$ 29,90</span>
+            </div>
+            <span className="bg-red-500 text-white px-4 py-2 rounded-full text-lg font-bold">
+              -69% OFF
+            </span>
+          </div>
+
           {/* CTA Button */}
           <a
             href="https://pay.kiwify.com.br/sjOd6yS"
