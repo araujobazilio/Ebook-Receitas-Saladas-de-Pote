@@ -68,8 +68,7 @@ export default function Hero() {
               size="lg"
               className="bg-[#2D5016] hover:bg-[#1B3A0B] text-white font-bold text-lg h-14 w-full md:w-auto px-8 transition-all duration-300 hover:shadow-lg"
               onClick={() => {
-                // Substitua pela URL do seu produto no Kiwify
-                window.location.href = "https://kiwify.com.br/seu-link-aqui";
+                window.location.href = "https://pay.kiwify.com.br/sjOd6yS";
               }}
             >
               Quero as 50 Receitas Agora

@@ -61,8 +61,7 @@ export default function FinalCTA() {
             size="lg"
             className="bg-white text-[#2D5016] hover:bg-green-50 font-bold text-lg h-16 px-10 transition-all duration-300 hover:shadow-xl"
             onClick={() => {
-              // Substitua pela URL do seu produto no Kiwify
-              window.location.href = "https://kiwify.com.br/seu-link-aqui";
+              window.location.href = "https://pay.kiwify.com.br/sjOd6yS";
             }}
           >
             Quero as 50 Receitas Agora

@@ -55,7 +55,9 @@ export default function Header() {
         {/* CTA Button */}
         <Button
           className="bg-[#2D5016] hover:bg-[#1B3A0B] text-white font-semibold"
-          onClick={() => scrollToSection("cta")}
+          onClick={() => {
+            window.location.href = "https://pay.kiwify.com.br/sjOd6yS";
+          }}
         >
           Quero as 50 Receitas
         </Button>
