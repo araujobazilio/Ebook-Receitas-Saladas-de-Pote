@@ -42,7 +42,7 @@ export default function FAQ() {
     {
       question: "Como recebo o e-book?",
       answer:
-        "Após a compra, você recebe acesso imediato ao e-book em PDF + os 3 bônus exclusivos. Tudo é entregue por email em segundos.",
+        "Após a compra, você recebe acesso imediato ao e-book interativo em HTML + os 3 bônus exclusivos. Tudo é entregue por email em segundos.",
     },
   ];
 
