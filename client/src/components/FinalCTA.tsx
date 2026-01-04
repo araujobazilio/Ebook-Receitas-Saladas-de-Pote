@@ -57,16 +57,15 @@ export default function FinalCTA() {
           </div>
 
           {/* CTA Button */}
-          <Button
-            size="lg"
-            className="bg-white text-[#2D5016] hover:bg-green-50 font-bold text-lg h-16 px-10 transition-all duration-300 hover:shadow-xl"
-            onClick={() => {
-              window.location.href = "https://pay.kiwify.com.br/sjOd6yS";
-            }}
+          <a
+            href="https://pay.kiwify.com.br/sjOd6yS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-white text-[#2D5016] hover:bg-green-50 font-bold text-lg h-16 px-10 rounded-md transition-all duration-300 hover:shadow-xl"
           >
             Quero as 50 Receitas Agora
             <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
+          </a>
 
           {/* Guarantee */}
           <div className="flex items-center justify-center gap-2 text-green-100 text-sm">
